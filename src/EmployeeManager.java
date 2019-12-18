@@ -53,8 +53,9 @@ public class EmployeeManager {
     public int setAge() {
         System.out.println("Vvedite vozrast rabotnika-");
         int age = 0 ;
+        int i = 0;
         String line = sc.nextLine();
-        while (line) {
+        while (!line.equals(age) &  i <=3) {
             try {
                 age = 1;
                 System.out.println("Vvedite civrami while 1");
@@ -65,7 +66,7 @@ public class EmployeeManager {
                 System.out.println("Oshibka vvoda, Vu ne pravilno vvodite vozrast");
                 System.out.println("Vvedite civrami");
 
-
+            i++;
 //            while (line.equals(String)) {
                 System.out.println("Vvedite civrami while 2");
               // age = 0;
